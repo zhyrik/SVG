@@ -1,0 +1,55 @@
+*{
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.compass{
+	max-width: 250px;
+	cursor: pointer;
+
+	-webkit-animation: animationFrames 2s linear 0s infinite normal ;
+  animation: animationFrames 2s linear 0s infinite normal ;
+}
+.compass:hover{
+	animation-play-state: paused;
+}
+.compass:hover .center{
+	fill: hsla(0, 67%, 74%, 0.582);
+}
+.compass:hover .border{
+	fill: rgba(90, 76, 76, 0.884);
+}
+.center{
+	fill: white;
+}
+.border{
+	fill: grey;
+}
+.red{
+	fill: red;
+}
+.blue{
+	fill: blue;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+
