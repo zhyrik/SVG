@@ -5,8 +5,13 @@
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
+div{
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	margin: 50px;
+}
 .compass{
-	max-width: 250px;
 	cursor: pointer;
 
 	-webkit-animation: animationFrames 2s linear 0s infinite normal ;
@@ -51,5 +56,80 @@
     transform: rotate(360deg) ;
   }
 }
+/* ---------------------webpack----------- */
+.webpack{
+	cursor: pointer;
+}
+.webpack:hover .border-webpack{
+	animation-play-state: paused;
+}
+.border-webpack{
+	fill: #8ed6fb;
+	transform-origin: 50% 50%;
 
+	-webkit-animation: webpackAnimation 4s linear 0s infinite normal ;
+  animation: webpackAnimation 4s linear 0s infinite normal ;
+}
+.center-webpack{
+	fill: #1c78c0"
+}
 
+@keyframes webpackAnimation{
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+@-moz-keyframes webpackAnimation{
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+/* ------js ----- */
+.js{
+	cursor: pointer;
+	-webkit-animation: jsAnimation 3s linear 0s infinite normal ;
+	animation: jsAnimation 3s linear 0s infinite normal ;
+	transition: 0.4s all;
+}
+.js:hover .js-fon{
+fill: #a0870d;
+}
+.js:hover .js-fon-s{
+	fill: #d4aa01;
+}
+.js-fon{
+	fill:#d4b830
+}
+.js-fon-s{
+	fill: #fdd83c;
+}
+@keyframes jsAnimation{
+  0% {
+    transform: scale(1) ;
+	}
+	50% {
+		transform: scale(0.7);
+	}
+  100% {
+    transform: scale(1) ;
+  }
+}
+
+@-moz-keyframes jsAnimation{
+  0% {
+    transform: scale(1) ;
+	}
+	50% {
+		transform: scale(0.7);
+	}
+  100% {
+    transform: scale(1) ;
+  }
+}
