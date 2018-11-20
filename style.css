@@ -133,3 +133,12 @@ fill: #a0870d;
     transform: scale(1) ;
   }
 }
+
+/* text */
+.zhurick{
+	display: flex;
+}
+.text-zhurik:hover{
+	cursor: pointer;
+	fill: red;
+}
